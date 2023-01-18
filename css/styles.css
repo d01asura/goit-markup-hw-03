@@ -307,8 +307,6 @@ img {
     width: 360px;
     height: 420px;
     background: #FFFFFF;
-    border: 1px solid #E7E9FC;
-    padding-bottom: 32px;
 }
 .menu-portfolio {
     display: flex;
@@ -316,5 +314,8 @@ img {
     gap: 48px 24px;
 }
 .menu-content {
-    margin-left: 16px;
+    padding-left: 16px;
+    border: 1px solid #E7E9FC;
+    border-top-color: #FFFFFF;
+    padding-bottom: 32px;
 }
