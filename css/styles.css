@@ -12,6 +12,25 @@ body {
     color: var(--slate);
     font-family: "Roboto", sans-serif;
 } 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding-left: 0;
+}
+button{
+    cursor: pointer;
+}
+img {
+    display: block;
+}
 .list {
     list-style: none;
 }
@@ -37,6 +56,13 @@ body {
     text-transform: capitalize;
     color: var(--navyblue);
 }
+.container{
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -49,10 +75,17 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 } 
+.header-container {
+    display: flex;
+    align-items: center;
+}
 /* Site nav */
 .header {
     background-color: #FFFFFF;
     border-bottom: 1px solid var(--cornflover);
+
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .header-logo {
     font-family: 'Raleway', sans-serif;
@@ -63,6 +96,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris);
+
+    margin-right: 76px;
 }
 .header-logo-part-two {
     color: var(--navyblue);
@@ -76,7 +111,19 @@ body {
     letter-spacing: 0.02em;
     color: var(--navyblue);
 }
-.header-link .link:active {
+.header-link {
+    display: flex;
+    gap: 40px;
+}
+.header-nav {
+    display: flex;
+    margin-right: auto;
+}
+.header-contact {
+    display: flex;
+    gap: 40px;
+}
+.link:active {
     color: var(--iris);
 }
 .cont-mail,
@@ -97,10 +144,17 @@ body {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;;
+    color: #FFFFFF;
+
+    margin: 0 auto 48px;
+    width: 507px;
 }
 .hero {
     background: var(--navyblue);
+
+    padding-top: 188px;
+    padding-bottom: 204px;
+    text-align: center;
 }
 .hero-button,
 .hero-button:hover,
@@ -113,33 +167,80 @@ body {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     font-family: inherit;
+
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    width: 169px;
+    height: 56px;
 }
 .hero-button:active {
     background-color: #404BBF;
 }
 
+
 /* Main Section 2 */
 
+.section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
 .section-subtitle {
     color: var(--navyblue);
+
+    margin-bottom: 8px;
+}
+.section-list{
+    display: flex;
+    gap: 24px;
 }
 
 /* Main Section 3 */
 
-.list {
-    border: 1px solid var(--cornflover);
+.galery {
+    margin-bottom: 120px;
+}
+.galery-title {
+    margin-bottom: 72px;
+}
+.pic {
+    display: flex;
+    gap: 24px;
 }
 
 /* Main Section 4 */
 
 .team {
     background-color: var(--cloud);
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.card {
+    width: 264px;
+    height: 380px;
+    left: 156px;
+    top: 1780px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+
+    padding-bottom: 32px;
+}
+.team-title {
+    margin-bottom: 72px;
 }
 .team-person {
-    text-align: center;
     color: var(--navyblue);
+    margin-top: 32px;
 }
 .team-pos {
+    margin-top: 8px;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
     text-align: center;
 }
 
@@ -147,6 +248,9 @@ body {
 
 .bottom {
     background: var(--navyblue);
+
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .bottom-logo {
     font-family: 'Raleway', sans-serif;
@@ -164,6 +268,9 @@ body {
 }
 .bottom-text {
     color: var(--cornflover);
+
+    margin-top: 16px;
+    width: 264px;
 }
 
 /* Portfolio main */
@@ -178,10 +285,21 @@ body {
     font-size: 16px;
     font-family: inherit;
     line-height: 1.5;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.04em;
     color: var(--iris);
+
+    height: 48px
+
+}
+.btn {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.button-style {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 72px;
 }
 .menu-button:active {
     background: #404BBF;
@@ -189,4 +307,26 @@ body {
 }
 .menu-title {
     color: var(--navyblue);
+
+    margin-bottom: 8px;
+    margin-top: 32px;
+}
+.menu {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+.p-card {
+    width: 360px;
+    height: 420px;
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
+    padding-bottom: 32px;
+}
+.menu-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+.menu-content {
+    margin-left: 16px;
 }
