@@ -192,6 +192,12 @@ img {
 
     margin-bottom: 8px;
 }
+.section-list-li {
+    width: calc((100% - 72px) / 4);
+}
+.section-list {
+    
+}
 
 /* Main Section 3 */
 
@@ -210,7 +216,7 @@ img {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.card {
+.team-list-card {
     width: 264px;
     height: 380px;
     left: 156px;
@@ -219,18 +225,16 @@ img {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
-
-    padding-bottom: 32px;
 }
 .team-title {
     margin-bottom: 72px;
 }
 .team-person {
     color: var(--navyblue);
-    margin-top: 32px;
+    margin-bottom: 8px;
 }
-.team-pos {
-    margin-top: 8px;
+.text-card {
+    padding: 32px 16px;
 }
 
 
@@ -265,9 +269,7 @@ img {
 
 /* Portfolio main */
 
-.menu-button,
-.menu-button:hover,
-.menu-button:focus {
+.menu-button {
     background: var(--cloud);
     border: 1px solid var(--cornflover);
     border-radius: 4px;
@@ -278,7 +280,7 @@ img {
     letter-spacing: 0.04em;
     color: var(--iris);
 
-    height: 48px
+    padding: 12px 24px;
 
 }
 .btn {
@@ -289,21 +291,21 @@ img {
     justify-content: center;
     margin-bottom: 72px;
 }
-.menu-button:active {
+.menu-button:active,
+.menu-button:hover,
+.menu-button:focus {
     background: #404BBF;
     color: #FFFFFF;
 }
 .menu-title {
     color: var(--navyblue);
-
     margin-bottom: 8px;
-    margin-top: 32px;
 }
 .menu {
     padding-top: 96px;
     padding-bottom: 120px;
 }
-.p-card {
+.menu-li {
     width: 360px;
     height: 420px;
     background: #FFFFFF;
@@ -314,8 +316,7 @@ img {
     gap: 48px 24px;
 }
 .menu-content {
-    padding-left: 16px;
     border: 1px solid #E7E9FC;
     border-top-color: #FFFFFF;
-    padding-bottom: 32px;
+    padding: 32px 0px 32px 16px;
 }
